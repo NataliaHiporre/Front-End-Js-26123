@@ -154,10 +154,9 @@ footer .footer-list {
   align-items: center;
   gap: 2rem;
 
-  padding-bottom: 3rem;
+  padding: 1.5rem;
 
   text-align: center;
-  padding-inline: 1.5rem;
 }
 
 .card img {
