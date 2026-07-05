@@ -58,8 +58,8 @@ h2 {
 
 header,
 footer {
-  background: #db8e00;
-  color: #000000;
+  background: #92101c;
+  color: #2a1e35;
   width: 100%;
 
   display: flex;
@@ -103,11 +103,11 @@ footer .footer-list {
 /* -------------------------------------------------------------------------- */
 
 .bg-primary {
-  background-color: #db8e00;
+  background-color: #92101c;
 }
 
 .bg-secondary {
-  background-color: #92101c;
+  background-color: #000000;
 }
 
 .text-light {
@@ -115,11 +115,11 @@ footer .footer-list {
 }
 
 .text-dark {
-  color: #db8e00;
+  color: #f6f6ee;
 }
 
 .text-secondary {
-  color: #db8e00;
+  color: #f6f6ee;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -174,7 +174,7 @@ footer .footer-list {
 }
 
 .form-contacto {
-  background-color: #db8e00;
+  background-color: #92101c;
   color: #2a1e35;
   width: 100%;
   max-width: 50rem;
@@ -189,6 +189,18 @@ footer .footer-list {
   flex-direction: column;
   gap: 3rem;
   margin-bottom: 3rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CARRITO                                  */
+/* -------------------------------------------------------------------------- */
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.acciones-carrito {
+  margin-top: 2rem;
 }
 
 /* -------------------------------------------------------------------------- */

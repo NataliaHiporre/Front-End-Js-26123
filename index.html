@@ -22,6 +22,11 @@
           <li>
             <a href="./pages/contacto.html">Contacto</a>
           </li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono">
+              🛒 <span id="contador-carrito">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -36,59 +41,7 @@
       </p>
       <section>
         <h2 class="titulo-productos">Nuestros productos</h2>
-        <div class="contenedor-tarjetas">
-          <article class="card text-dark">
-            <img src="./img/gorra.jpg" alt="imagen de gorra" />
-            <h3>Gorra</h3>
-            <p>
-              Confeccionada en algodón premium con ajuste regulable y bordado de
-              alta calidad.
-            </p>
-            <p>Precio: $24999</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
-
-          <article class="card">
-            <img src="./img/playera.jpg" alt="imagen de playera" />
-            <h3>Playera</h3>
-            <p>
-              Fabricada en algodón suave y transpirable con estampado resistente
-              al desgaste.
-            </p>
-            <p>Precio: $34999</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
-
-          <article class="card">
-            <img src="./img/sudadera.jpg" alt="imagen de sudadera" />
-            <h3>Sudadera</h3>
-            <p>
-              Elaborada con mezcla de algodón y poliéster para mayor comodidad y
-              abrigo.
-            </p>
-            <p>Precio: $59999</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
-
-          <article class="card">
-            <img src="./img/totebag.jpg" alt="imagen de totebag" />
-            <h3>Totebag</h3>
-            <p>
-              Totebag confeccionada en tela de lona resistente, ideal para uso
-              diario y estilo urbano.
-            </p>
-            <p>Precio: $19999</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
-        </div>
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
       </section>
     </main>
     <footer>
@@ -104,5 +57,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

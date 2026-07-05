@@ -44,3 +44,24 @@ El sitio cuenta con diseño responsive mediante Flexbox y Media Queries, permiti
 ## Autor
 
 Proyecto realizado por Natalia Fernanda Hiporre para el curso Talento Tech – Comisión 26123 de Front-End JS, con el objetivo de reforzar conocimientos de maquetación web, diseño responsivo y desarrollo de interfaces utilizando HTML5 y CSS3.
+
+## Actualización: Incorporación de JavaScript y Datos Dinámicos
+
+Para la segunda etapa del curso, el proyecto evolucionó sumando lógica de programación, persistencia de datos y una arquitectura de archivos modular basada en componentes interconectados.
+
+### Nueva Estructura de Archivos y Carpetas
+
+- **`data/`**: Contiene el archivo `productos.json`, el cual centraliza toda la información estructurada del catálogo (id, nombre, precio y rutas de imágenes para Gorra, Playera, Sudadera y Totebag).
+- **`js/`**: Carpeta que organiza la lógica del negocio mediante módulos de JavaScript:
+  - `index.js`: Script principal de la página de inicio. Se encarga de hacer la petición asrincrónica para traer el catálogo y construir la interfaz de la tienda.
+  - `carrito.js`: Controlador encargado de renderizar dinámicamente las tarjetas dentro de la página del carrito de compras.
+  - `contacto.js`: Script dedicado a inicializar y mantener actualizado el estado del contador en la vista de contacto.
+  - `funcionesCarrito.js`: Contiene las funciones core para interactuar con los elementos del array (agregar, eliminar usando `splice()` o vaciar).
+  - `storage.js`: Administra la persistencia de datos interactuando directamente con el `localStorage` mediante `JSON.stringify()` y `JSON.parse()`.
+  - `ui.js`: Módulo reutilizable para el manejo visual de la interfaz (alertas y manipulación de texto del contador).
+
+### Funcionalidades Técnicas Implementadas
+
+- **Consumo Asincrónico de Datos**: Uso de `fetch()` en `index.js` para consumir de forma dinámica el catálogo desde `./data/productos.json` procesando las respuestas con promesas (`.then()` y `.catch()`).
+- **Inyección Dinámica en el DOM**: Creación en tiempo real de componentes estructurales utilizando métodos nativos de JavaScript como `document.createElement()`, asignación de clases dinámicas (`classList.add()`) y ensamblado de nodos con `appendChild()` para pintar las tarjetas en los contenedores `#contenedor-tarjetas` y `#contenedor-carrito`.
+- **Manejo de Eventos y Ciclo de Vida**: Uso de los escuchadores `addEventListener("click")` en los botones de compra y control preciso del ciclo de vida de la aplicación mediante el evento global `DOMContentLoaded` para garantizar que el contador refleje el estado real del carrito en todas las vistas del sitio desde el arranque.

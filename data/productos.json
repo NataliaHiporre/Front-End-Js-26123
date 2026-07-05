@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "Gorra",
+    "precio": 24999,
+    "img": "img/gorra.jpg"
+  },
+  {
+    "id": "2",
+    "nombre": "Playera",
+    "precio": 34999,
+    "img": "img/playera.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Sudadera",
+    "precio": 59999,
+    "img": "img/sudadera.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Totebag",
+    "precio": 19999,
+    "img": "img/totebag.jpg"
+  }
+]
